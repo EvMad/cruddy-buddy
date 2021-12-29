@@ -19,3 +19,6 @@ connection.connect((err) => {
     runPrompt();
 });
 
+const runPrompt = () => {
+    //this will be the inquirer.prompt function to view users_db etc
+};
