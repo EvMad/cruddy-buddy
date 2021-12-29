@@ -1,0 +1,10 @@
+{
+    "name": "cruddy-buddy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+      "start": "node buddy.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
