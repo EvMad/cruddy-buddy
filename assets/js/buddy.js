@@ -140,6 +140,9 @@ const addUser = () => {
     });
 };
 
+
+//updateUser function will most likely be used for updating email only
+
 const users = [];
 
 const updateUser = () => {
@@ -154,5 +157,22 @@ const updateUser = () => {
 
     userChoices();
 
-    inquirer.prompt([])
+    inquirer.prompt(
+        {
+            name: 'updateUser',
+            type: 'list',
+            message: 'Which user (last name) would you like to update?',
+            choices: users,
+        },
+    )
+    .then((answer) => {console.log('Updating user...\n');
+
+        connection.query(
+            'UPDATE user SET ? WHERE ?',
+            {
+                email: answer.upEmail,
+            }
+        )
+
+})
 };
