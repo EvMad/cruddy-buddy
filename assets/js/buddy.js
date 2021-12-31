@@ -35,4 +35,35 @@ const runPrompt = () => {
             'Exit',
         ],
     })
+    .then((answer) => {
+        switch (answer.action) {
+            case 'See all users':
+                viewAll();
+                break;
+
+            case 'See all email addresses':
+                viewEmail();
+                break;
+
+            case 'Add a user':
+                addUser();
+                break;
+
+            case 'Update a user':
+                updateUser();
+                break;
+
+            case 'Delete a user':
+                deleteUser();
+                break;
+
+            case 'Exit':
+                exitPrompt();
+                break;
+
+            default:
+                console.log(`Invalid action: ${answer.action}`);
+                break;
+        }
+    });
 };
