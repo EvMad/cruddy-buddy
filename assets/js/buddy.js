@@ -142,3 +142,17 @@ const addUser = () => {
 
 const users = [];
 
+const updateUser = () => {
+
+        const userChoices = () => {
+
+            connection.query('SELECT last_name FROM user', (err, res) => {
+                if (err) throw err;
+                res.push(users);
+            })
+        };
+
+    userChoices();
+
+    inquirer.prompt([])
+};
