@@ -196,4 +196,30 @@ const deleteUser = () => {
         })
     };
 
+    userChoices();
+
+    inquirer.prompt(
+
+        {
+            name: 'deleteUser',
+            type: 'list',
+            message: 'Which user (last name) would you like to delete?',
+            choices: users,
+        },
+    )
+    .then((answer) => {console.log('Deleting user...\n');
+
+        connection.query(
+            'DELETE FROM user SET ? WHERE ?',
+            {
+                last_name: answer.deleteUser,
+            },
+            (err) => {
+                if (err) throw err;
+                console.log('User deleted!\n');
+            }
+        );
+
+});
+
 }
