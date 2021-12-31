@@ -80,6 +80,7 @@ const viewAll = () => {
 
 const viewEmail = () => {
     // select all email addresses from all users in user table
+    // SELECT * email ????
 
     const query = 'SELECT email FROM user';
     connection.query(query, { user: answer.user }, (err,res) => {
@@ -88,5 +89,53 @@ const viewEmail = () => {
             console.log(`User: ${email}`);
         });
         runPrompt();
+    });
+};
+
+
+const addUser = () => {
+    inquirer.prompt([
+        {
+            name: 'addFirst',
+            type: 'input',
+            message: 'Enter user first name'},
+        {
+            name: 'addLast',
+            type: 'input',
+            message: 'Enter user last name'},
+        {
+            name: 'addEmail',
+            type: 'input',
+            message: 'Enter user email'},
+        {
+            name: 'addCountry',
+            type: 'input',
+            message: 'Enter user country'},
+        {
+            name: 'addCity',
+            type: 'input',
+            message: 'Enter user city'},
+        {
+            name: 'addState',
+            type: 'input',
+            message: 'Enter user state/province'},
+    ])
+    .then((answer) => {console.log('Adding new user...\n');
+        connection.query(
+            'INSERT INTO user SET ?',
+            {
+                first_name: answer.addFirst,
+                last_name: answer.addLast,
+                email: answer.addEmail,
+                country: answer.addCountry,
+                city: answer.addCity,
+                state_prov: answer.addState,
+            },
+            (err) => {
+                if (err) throw err;
+                console.log('User added!\n');
+            }
+        );
+
     });
 };
