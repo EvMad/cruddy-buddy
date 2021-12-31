@@ -185,3 +185,15 @@ const updateUser = () => {
 
 });
 };
+
+const deleteUser = () => {
+
+    const userChoices = () => {
+
+        connection.query('SELECT last_name FROM user', (err, res) => {
+            if (err) throw err;
+            res.push(users);
+        })
+    };
+
+}
