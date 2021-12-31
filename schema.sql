@@ -2,3 +2,9 @@ DROP DATABASE IF EXISTS users_db;
 CREATE DATABASE users_db;
 USE users_db;
 
+CREATE TABLE name(
+    id INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(30) DEFAULT NOT NULL,
+    last_name VARCHAR(30) DEFAULT NOT NULL,
+    PRIMARY KEY (id)
+);
