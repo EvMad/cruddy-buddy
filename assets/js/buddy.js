@@ -77,3 +77,7 @@ const viewAll = () => {
     });
     runPrompt();
 };
+
+const viewEmail = () => {
+    // select all email addresses from all users in user table
+}
