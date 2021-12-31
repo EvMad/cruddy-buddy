@@ -4,13 +4,13 @@
     "description": "",
     "main": "",
     "scripts": {
-      "start": "node buddy.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node buddy.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-
     "dependencies": {
         "dotenv": "^10.0.0",
         "inquirer": "^8.1.1",
-        "mysql": "^2.18.1"
-      }
+        "mysql": "^2.18.1",
+        "sass": "^1.45.2"
+    }
 }
