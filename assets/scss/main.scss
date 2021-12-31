@@ -1,4 +1,4 @@
-
+// create resets.scss for @include resets ?
 
 @mixin flexColumn {
     display: flex;
@@ -12,4 +12,16 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.container {
+    @include flexColumn()
+}
+
+.row {
+    @include flexRow()
+}
+
+.column {
+    @include flexColumn()
 }
