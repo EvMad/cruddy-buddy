@@ -68,6 +68,8 @@ const runPrompt = () => {
     });
 };
 
+// view all users
+
 const viewAll = () => {
     console.log('selecting all users...\n');
     connection.query('SELECT * FROM user', (err,res) => {
@@ -77,6 +79,9 @@ const viewAll = () => {
     });
     runPrompt();
 };
+
+
+//view all email addresses
 
 const viewEmail = () => {
     // select all email addresses from all users in user table
@@ -92,6 +97,8 @@ const viewEmail = () => {
     });
 };
 
+
+// add a new user manually from inquirer
 
 const addUser = () => {
     inquirer.prompt([
@@ -185,6 +192,8 @@ const updateUser = () => {
 
 });
 };
+
+//delete a user
 
 const deleteUser = () => {
 
