@@ -57,9 +57,9 @@ const runPrompt = () => {
                 deleteUser();
                 break;
 
-            case 'Exit':
-                exitPrompt();
-                break;
+            // case 'Exit':
+            //     exitPrompt();
+            //     break;
 
             default:
                 console.log(`Invalid action: ${answer.action}`);
