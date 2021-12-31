@@ -164,6 +164,11 @@ const updateUser = () => {
             message: 'Which user (last name) would you like to update?',
             choices: users,
         },
+        {
+            name: 'upEmail',
+            type: 'input',
+            message: 'Enter updated email address for this user',
+        },
     )
     .then((answer) => {console.log('Updating user...\n');
 
