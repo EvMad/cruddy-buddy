@@ -176,8 +176,12 @@ const updateUser = () => {
             'UPDATE user SET ? WHERE ?',
             {
                 email: answer.upEmail,
+            },
+            (err) => {
+                if (err) throw err;
+                console.log('Email updated!\n');
             }
-        )
+        );
 
-})
+});
 };
