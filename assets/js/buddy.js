@@ -21,4 +21,18 @@ connection.connect((err) => {
 
 const runPrompt = () => {
     //this will be the inquirer.prompt function to view users_db etc
+
+    inquirer.prompt({
+        name: 'action',
+        type: 'list',
+        message: 'What would you like to do?',
+        choices: [
+            'See all users',
+            'See all email addresses',
+            'Add a user',
+            'Update a user',
+            'Delete a user',
+            'Exit',
+        ],
+    })
 };
