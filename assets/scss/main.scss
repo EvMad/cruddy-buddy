@@ -14,6 +14,16 @@
     justify-content: center;
 }
 
+@mixin hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -29,4 +39,8 @@ body {
 
 .column {
     @include flexColumn()
+}
+
+.hero {
+    @include hero
 }

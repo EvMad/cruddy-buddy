@@ -24,4 +24,13 @@ body {
   align-items: center;
 }
 
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
