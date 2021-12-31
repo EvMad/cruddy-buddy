@@ -80,4 +80,13 @@ const viewAll = () => {
 
 const viewEmail = () => {
     // select all email addresses from all users in user table
-}
+
+    const query = 'SELECT email FROM user';
+    connection.query(query, { user: answer.user }, (err,res) => {
+        if (err) throw err;
+        res.forEach(({ email }) => {
+            console.log(`User: ${email}`);
+        });
+        runPrompt();
+    });
+};
