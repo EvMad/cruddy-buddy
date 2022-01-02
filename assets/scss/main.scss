@@ -76,7 +76,7 @@ body {
 }
 
 #hero-span {
-    color: #FA4210
+    color: $secondary;
 }
 
 .card {
@@ -86,7 +86,7 @@ body {
     padding-right: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
-    & h2 {color: #FA4210};
+    & h2 {color: $secondary};
     & p {
         text-align: center;
         font-size: small;
