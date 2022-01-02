@@ -55,6 +55,10 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Ultra", serif;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .card h2 {
   color: #FA4210;
