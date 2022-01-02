@@ -73,3 +73,10 @@ body {
 #hero-span {
     color: #FA4210
 }
+
+.card {
+    @include flexColumn();
+    font-family: 'Ultra', serif;
+    & h2 {color: #FA4210};
+
+}
