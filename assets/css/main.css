@@ -59,5 +59,9 @@ body {
 .card h2 {
   color: #FA4210;
 }
+.card p {
+  text-align: center;
+  font-size: small;
+}
 
 /*# sourceMappingURL=main.css.map */

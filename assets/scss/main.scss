@@ -78,5 +78,9 @@ body {
     @include flexColumn();
     font-family: 'Ultra', serif;
     & h2 {color: #FA4210};
+    & p {
+        text-align: center;
+        font-size: small;
+    }
 
 }
