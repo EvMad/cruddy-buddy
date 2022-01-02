@@ -61,7 +61,7 @@ body {
 
 .hero {
     @include hero;
-    @include for-phone-only {
+    @include for-size(phone-only) {
         max-width: 75vw;
         max-height: 50vh;
     }

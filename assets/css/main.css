@@ -1,0 +1,47 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ultra", serif;
+}
+@media (max-width: 599px) {
+  .hero {
+    max-width: 75vw;
+    max-height: 50vh;
+  }
+}
+
+#hero-span {
+  color: #FA4210;
+}
+
+/*# sourceMappingURL=main.css.map */
