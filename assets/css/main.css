@@ -33,6 +33,12 @@ body {
   font-weight: bold;
   font-family: "Ultra", serif;
 }
+@media (max-width: 599px) {
+  .hero {
+    max-width: 75vw;
+    max-height: 50vh;
+  }
+}
 
 #hero-span {
   color: #FA4210;

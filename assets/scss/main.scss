@@ -63,7 +63,11 @@ body {
 }
 
 .hero {
-    @include hero
+    @include hero;
+    @include for-phone-only {
+        max-width: 75vw;
+        max-height: 50vh;
+    }
 }
 
 #hero-span {
