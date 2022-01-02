@@ -1,5 +1,10 @@
 // create resets.scss for @include resets ?
 
+// color guide
+$secondary: #FA4210;
+
+//mixins
+
 @mixin flexColumn {
     display: flex;
     flex-wrap: wrap;
