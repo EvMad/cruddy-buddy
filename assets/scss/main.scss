@@ -45,6 +45,9 @@
 body {
     height: 100vh;
     width: 100vw;
+    @include for-size(phone-only) {
+        display: flex;
+    }
 }
 
 .container {
