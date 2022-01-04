@@ -1,3 +1,8 @@
+var express = require('express');
+var router = express.Router();
+var db = require('../js/buddy');
+
+
 //user interface js
 
 //form submit
