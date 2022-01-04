@@ -44,3 +44,4 @@ const formSubmit = async (event) => {
     .addEventListener('submit', formSubmit);
 };
 
+module.exports = router;
