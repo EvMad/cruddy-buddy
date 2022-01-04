@@ -86,6 +86,8 @@ body {
     @include flexRow();
 
     & input {background-color: $secondary};
+
+    text-align: center;
 }
 
 .button {
