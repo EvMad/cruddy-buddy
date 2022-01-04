@@ -11,7 +11,7 @@ router.post('/', function(req, res) {
 const userInfo = req.body;
 
 var sql = 'INSERT INTO users SET ?';
-db.query(sql, userInfo, function (err,data) {
+db.query(sql, userInfo, function (err, res) {
     if (err) throw err;
     console.log("User info added to table");
 
