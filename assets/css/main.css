@@ -68,7 +68,7 @@ body {
 .card p {
   text-align: center;
   font-size: small;
-  max-width: 50%;
+  max-width: 65ch;
 }
 @media (max-width: 599px) {
   .card {
