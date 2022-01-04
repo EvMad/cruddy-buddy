@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var db = require('../js/buddy');
-router.get('/form', function(req, res, next) {
+router.get('/form', function(req, res) {
     res.render('/');
 });
-router.post('/', function(req, res, next) {
+router.post('/', function(req, res) {
 
     // store the user input data
 
