@@ -1,6 +1,23 @@
 var express = require('express');
 var router = express.Router();
 var db = require('../js/buddy');
+router.get('/form', function(req, res, next) {
+    res.render('users');
+});
+router.post('/create', function(req, res, next) {
+
+    // store the user input data
+
+const userInfo = req.body;
+
+var sql = 'INSERT INTO users SET ?';
+db.query(sql, userInfo, function (err,data) {
+    if (err) throw err;
+    console.log("User info added to table");
+
+});
+
+})
 
 
 //user interface js
@@ -27,13 +44,3 @@ const formSubmit = async (event) => {
     .addEventListener('submit', formSubmit);
 };
 
-// store the user input data
-
-const userInfo = req.body;
-
-var sql = 'INSERT INTO users SET ?';
-db.query(sql, userInfo, function (err,data) {
-    if (err) throw err;
-    console.log("User info added to table");
-
-});
