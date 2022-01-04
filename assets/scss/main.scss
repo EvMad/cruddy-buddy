@@ -109,10 +109,10 @@ body {
   //media query for device accesibility
 
   // smartphones and touchscreens
-  @media (hover: none) and (pointer: coarse) { @content; }
+//   @media (hover: none) and (pointer: coarse) { @content; }
 
   //stylus-based screens
-  @media (hover: none) and (pointer: fine) { @content; }
+//   @media (hover: none) and (pointer: fine) { @content; }
 
   //mouse and touchpads
-  @media (hover: hover) and (pointer: fine) { @content; }
+//   @media (hover: hover) and (pointer: fine) { @content; }
