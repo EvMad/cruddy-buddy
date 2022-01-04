@@ -82,8 +82,15 @@ body {
     color: $secondary;
 }
 
+.button-holder {
+    @include flexRow();
+
+    & input {background-color: $secondary};
+}
+
 .button {
     color: $secondary;
+
 }
 
 .card {
