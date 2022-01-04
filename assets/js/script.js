@@ -21,3 +21,7 @@ const formSubmit = async (event) => {
     document
     .addEventListener('submit', formSubmit);
 };
+
+// store the user input data
+
+const userInfo = req.body;
