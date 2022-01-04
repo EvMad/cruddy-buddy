@@ -96,4 +96,9 @@ body {
 
     }
 
+    @include for-size(phone-only) {
+        min-width: 75vw;
+        min-width: 75vmax;
+    }
+
 }

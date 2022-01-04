@@ -70,5 +70,11 @@ body {
   font-size: small;
   max-width: 50%;
 }
+@media (max-width: 599px) {
+  .card {
+    min-width: 75vw;
+    min-width: 75vmax;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
