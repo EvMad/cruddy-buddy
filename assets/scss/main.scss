@@ -72,6 +72,8 @@ body {
     @include for-size(phone-only) {
         max-width: 75vw;
         max-height: 50vh;
+        min-width: 50vw;
+        min-width: 50vmax;
     }
 }
 
@@ -91,7 +93,7 @@ body {
         text-align: center;
         font-size: small;
         max-width: 50%;
-        
+
     }
 
 }

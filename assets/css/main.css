@@ -42,6 +42,8 @@ body {
   .hero {
     max-width: 75vw;
     max-height: 50vh;
+    min-width: 50vw;
+    min-width: 50vmax;
   }
 }
 
