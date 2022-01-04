@@ -82,6 +82,10 @@ body {
     color: $secondary;
 }
 
+.button {
+    color: $secondary;
+}
+
 .card {
     @include flexColumn();
     font-family: 'Ultra', serif;

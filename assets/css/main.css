@@ -51,6 +51,10 @@ body {
   color: #FA4210;
 }
 
+.button {
+  color: #FA4210;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
