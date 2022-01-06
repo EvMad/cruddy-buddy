@@ -92,7 +92,16 @@ body {
 
   &a {
     @include aside();
+    text-decoration: none;
   }
+
+  &i {
+    color:$secondary;
+  }
+}
+
+i {
+  color: $secondary;
 }
 
 .button-holder {

@@ -58,6 +58,14 @@ body {
 .asidea {
   color: #FA4210;
   text-decoration: none;
+  text-decoration: none;
+}
+.asidei {
+  color: #FA4210;
+}
+
+i {
+  color: #FA4210;
 }
 
 .button-holder {
