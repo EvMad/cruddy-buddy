@@ -30,6 +30,11 @@ $secondary: #FA4210;
     
 }
 
+@mixin aside {
+  color: $secondary;
+  text-decoration: none;
+}
+
 // media query mixins
 
 @mixin for-size($size) {
@@ -80,6 +85,14 @@ body {
 
 #hero-span {
     color: $secondary;
+}
+
+.aside {
+  @include aside();
+
+  &a {
+    @include aside();
+  }
 }
 
 .button-holder {

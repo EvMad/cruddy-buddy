@@ -51,6 +51,15 @@ body {
   color: #FA4210;
 }
 
+.aside {
+  color: #FA4210;
+  text-decoration: none;
+}
+.asidea {
+  color: #FA4210;
+  text-decoration: none;
+}
+
 .button-holder {
   display: flex;
   flex-wrap: wrap;
