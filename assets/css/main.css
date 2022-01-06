@@ -54,6 +54,9 @@ body {
 .aside {
   color: #FA4210;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .asidea {
   color: #FA4210;

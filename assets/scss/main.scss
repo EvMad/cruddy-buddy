@@ -89,6 +89,9 @@ body {
 
 .aside {
   @include aside();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &a {
     @include aside();
