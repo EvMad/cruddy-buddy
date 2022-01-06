@@ -93,6 +93,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
+  // @include for-size(phone-only){display: none};
+  // @include for-size(tablet-portrait-up){display: none};
+  // @include for-size(tablet-landscape-up){flex-direction: row};
+ 
+
+
+
   &a {
     @include aside();
     text-decoration: none;
